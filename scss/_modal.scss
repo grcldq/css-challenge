@@ -1,0 +1,14 @@
+@import '_theme.scss';
+
+.modal {
+  background-color: $navy;
+  padding: 6px 15px;
+}
+
+.modal__header {
+  font-size: 1em;
+  color: $purple-400;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 5px 0 10px;
+}

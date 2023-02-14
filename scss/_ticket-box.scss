@@ -1,0 +1,85 @@
+@import '_theme.scss';
+
+.ticket-box {
+  background: $orange-300;
+  background: linear-gradient(124deg, $orange-300 0%, $orange-200 100%);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 12px 0;
+  padding: 4px 20px;
+
+  &__header {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__header-icon {
+    height: 30px;
+  }
+
+  &__header-text {
+    margin-left: 10px;
+  }
+
+  &__details {
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+
+  &__dashed-border {
+    border: 1px dashed $grey-100;
+    transform: scaleY(1.9);
+  }
+
+  &__ticket {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px 0;
+    padding: 10px 6px;
+    position: relative;
+  }
+
+  &__ticket-text {
+    color: $dark-blue;
+    margin: 3px 0;
+
+    &--grey {
+      color: $grey-100;
+    }
+
+    &--uppercase {
+      text-transform: uppercase;
+    }
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+
+  &__ticket-cutout {
+    position: absolute;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(124deg, $orange-300 0%, $orange-200 100%);
+    top: 40%;
+
+    // to fix
+    &--right {
+      right: -5px;
+    }
+
+    &--left {
+      left: -5px;
+    }
+  }
+}

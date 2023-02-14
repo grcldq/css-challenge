@@ -1,0 +1,22 @@
+@import '_main-info.scss';
+@import '_ticket-box.scss';
+@import '_theme.scss';
+@import '_button.scss';
+@import '_modal.scss';
+
+body {
+  background-color: $background;
+  color: $primary-text;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  padding: 4px 6px;
+}
+
+.actions {
+  margin: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
