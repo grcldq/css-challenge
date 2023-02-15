@@ -9,85 +9,214 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <section class="container">
-      <div class="main-info">
-        <h1 class="main-info__header">
-          <span class="main-info__header--uppercase"
-            >Goldroger "Diskman Legends"</span
-          >
-          Tour 2022
-        </h1>
-        <p class="main-info__text">FZW Club, Ritterstraße 20, Dortmund</p>
-        <p class="main-info__text">Fr, 27.05.2022 - 19:00</p>
-      </div>
-      <div class="ticket-box">
-        <div class="ticket-box__header">
-          <img
-            class="ticket-box__header-icon"
-            src="./icons/opened-door-aperture.svg"
-            alt="door icon"
-          />
-          <h1 class="ticket-box__header-text">Already checked in</h1>
+    <div class="container">
+      <section class="ticket-info">
+        <div class="main-info">
+          <h1 class="main-info__header">
+            <span class="main-info__header--uppercase"
+              >Goldroger "Diskman Legends"</span
+            >
+            Tour 2022
+          </h1>
+          <p class="main-info__text">FZW Club, Ritterstraße 20, Dortmund</p>
+          <p class="main-info__text">Fr, 27.05.2022 - 19:00</p>
         </div>
-        <div class="ticket-box__details">
-          <div class="ticket-box__ticket">
-            <svg
-              role="none"
-              class="ticket-box__ticket-cutout ticket-box__ticket-cutout--left"
-            >
-              <circle style="fill: transparent" cx="20" cy="20" r="20"></circle>
-            </svg>
-            <p
-              class="ticket-box__ticket-text ticket-box__ticket-text--grey ticket-box__ticket-text--uppercase"
-            >
-              Check in
-            </p>
-            <p class="ticket-box__ticket-text ticket-box__ticket-text--bold">
-              09:41:08
-            </p>
+        <div class="ticket-box">
+          <div class="ticket-box__header">
+            <img
+              class="ticket-box__header-icon"
+              src="./icons/open-door.svg"
+              alt="opened door"
+            />
+            <h1 class="ticket-box__header-text">Already checked in</h1>
           </div>
-          <span class="ticket-box__dashed-border"></span>
-          <div class="ticket-box__ticket">
-            <svg
-              role="none"
-              class="ticket-box__ticket-cutout ticket-box__ticket-cutout--right"
-            >
-              <circle fill="transparent" cx="20" cy="20" r="20"></circle>
-            </svg>
-            <p
-              class="ticket-box__ticket-text ticket-box__ticket-text--grey ticket-box__ticket-text--uppercase"
-            >
-              Entrance
-            </p>
-            <p class="ticket-box__ticket-text ticket-box__ticket-text--bold">
-              Entry B
-            </p>
+          <div class="ticket-box__details">
+            <div class="ticket-box__ticket">
+              <svg
+                role="none"
+                class="ticket-box__ticket-cutout ticket-box__ticket-cutout--left"
+              >
+                <circle
+                  style="fill: transparent"
+                  cx="20"
+                  cy="20"
+                  r="20"
+                ></circle>
+              </svg>
+              <div class="ticket-box__ticket-text">
+                <p
+                  class="ticket-box__ticket-text--grey ticket-box__ticket-text--uppercase ticket-box__ticket-text--small"
+                >
+                  Check in
+                </p>
+                <p
+                  class="ticket-box__ticket-text ticket-box__ticket-text--bold"
+                >
+                  09:41:08
+                </p>
+              </div>
+            </div>
+            <span class="ticket-box__dashed-border"></span>
+            <div class="ticket-box__ticket">
+              <svg
+                role="none"
+                class="ticket-box__ticket-cutout ticket-box__ticket-cutout--right"
+              >
+                <circle fill="transparent" cx="20" cy="20" r="20"></circle>
+              </svg>
+              <div class="ticket-box__ticket-text">
+                <p
+                  class="ticket-box__ticket-text ticket-box__ticket-text--grey ticket-box__ticket-text--uppercase ticket-box__ticket-text--small"
+                >
+                  Entrance
+                </p>
+                <p
+                  class="ticket-box__ticket-text ticket-box__ticket-text--bold"
+                >
+                  Entry B
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button button--orange-purple button--with-arrow">
+            <div class="button__arrow-icon-circle"></div>
+            <span class="button__text--large">Checkout</span>
           </div>
         </div>
-        <div class="button button--orange-purple button--with-arrow">
-          <div class="button__arrow-icon-circle"></div>
-          <span class="button__text--large">Checkout</span>
+        <div class="actions">
+          <button class="button button--pink-purple button__text--regular">
+            <img src="icons/camera.svg" alt="camera" class="button__icon" />
+            Scan
+          </button>
+          <button class="button button--inverted button__text--regular">
+            Ticketcode
+          </button>
         </div>
-      </div>
-      <div class="actions">
-        <button class="button button--pink-purple button__text--regular">
-          <img src="icons/camera.svg" alt="camera" class="button__icon" /> Scan
-        </button>
-        <button class="button button--inverted button__text--regular">
-          Ticketcode
-        </button>
-      </div>
-    </section>
-    <div class="modal">
-      <h1 class="modal__header">Activity Log - Scanner B</h1>
-      <div>
-        <!-- modal details -->
-      </div>
+      </section>
+      <section class="modal">
+        <img src="icons/toggle.svg" alt="swipe up toggle" class="modal__toggle" />
+        <div class="modal__header">
+          <h1 class="modal__header-text">Activity Log - Scanner B</h1>
+          <div class="modal__header-notification">
+            <span class="modal__header-notification-number">9</span>
+            <img src="icons/red-dot.svg" alt="red ellipsis" />
+          </div>
+        </div>
+        <div class="modal__contained-box">
+          <div class="modal__item">
+            <img src="icons/check.svg" class="modal__item-icon"  alt="success" />
+            <div class="modal__item-details">
+              <div
+                class="modal__item-details-status modal__item-details-status--success"
+              >
+                <p>Scan</p>
+                <p>a few seconds ago</p>
+              </div>
+              <p class="modal__item-details-text modal__item-details-text--bold">Christian Kroter</p>
+              <p class="modal__item-details-text">
+                2022032187663<br />
+                Section A, Row 20, Seat 2
+              </p>
+            </div>
+          </div>
+          <div class="modal__item">
+            <img src="icons/error.svg" class="modal__item-icon"  alt="error" />
+            <div class="modal__item-details">
+              <div
+                class="modal__item-details-status modal__item-details-status--error"
+              >
+                <p>Unbekanntes Ticket</p>
+                <p>16:25:02</p>
+              </div>
+              <p class="modal__item-details-text">2022032187663</p>
+            </div>
+          </div>
+          <div class="modal__item">
+            <img src="icons/door.svg" class="modal__item-icon"  alt="entered" />
+            <div class="modal__item-details">
+              <div
+                class="modal__item-details-status modal__item-details-status--warning"
+              >
+                <p>Bereits eingelassen - Entry A</p>
+                <p>16:24:54</p>
+              </div>
+              <p class="modal__item-details-text modal__item-details-text--bold">Nikita Lim</p>
+              <p class="modal__item-details-text">
+                2022032187663<br />
+                Section A, Row 20, Seat 2
+              </p>
+            </div>
+          </div>
+          <div class="modal__item">
+            <img src="icons/check.svg" class="modal__item-icon"  alt="success" />
+            <div class="modal__item-details">
+              <div
+                class="modal__item-details-status modal__item-details-status--success"
+              >
+                <p>Scan</p>
+                <p>13:35:48</p>
+              </div>
+              <p class="modal__item-details-text modal__item-details-text--bold">Jens Ravens</p>
+              <p class="modal__item-details-text">
+                2022032187663<br />
+                Section A, Row 20, Seat 2
+              </p>
+            </div>
+          </div>
+          <div class="modal__item">
+            <img src="icons/door.svg" class="modal__item-icon"  alt="entered" />
+            <div class="modal__item-details">
+              <div
+                class="modal__item-details-status modal__item-details-status--warning"
+              >
+                <p>Ticket wieder gültig gemacht - Entry A</p>
+                <p>16:24:54</p>
+              </div>
+              <p class="modal__item-details-text modal__item-details-text--bold">David Doufor-Boivin</p>
+              <p class="modal__item-details-text">
+                2022032187663<br />
+                Section A, Row 20, Seat 2
+              </p>
+            </div>
+          </div>
+          <div class="modal__item">
+            <img src="icons/check.svg" class="modal__item-icon"  alt="success" />
+            <div class="modal__item-details">
+              <div
+                class="modal__item-details-status modal__item-details-status--success"
+              >
+                <p>Scan</p>
+                <p>16:35:48</p>
+              </div>
+              <p class="modal__item-details-text modal__item-details-text--bold">
+                16:21:09 - Malte Stiebritz
+              </p>
+              <p class="modal__item-details-text">
+                2022032187663<br />
+                Section A, Row 20, Seat 2
+              </p>
+            </div>
+          </div>
+          <div class="modal__item">
+            <img src="icons/error.svg" class="modal__item-icon" alt="error" />
+            <div class="modal__item-details">
+              <div
+                class="modal__item-details-status modal__item-details-status--error"
+              >
+                <p>Unbekanntes Ticket</p>
+                <p>16:25:02</p>
+              </div>
+              <p class="modal__item-details-text modal__item-details-text--bold">16:18:02</p>
+              <p class="modal__item-details-text">2022032187663</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

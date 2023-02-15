@@ -7,16 +7,30 @@
 body {
   background-color: $background;
   color: $primary-text;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
 .container {
-  padding: 4px 6px;
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-type: y proximity;
+}
+
+.ticket-info {
+  padding: 12px 16px;
+  scroll-snap-align: start;
 }
 
 .actions {
-  margin: 0 40px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 15px;
+  display: flex;
+  justify-content: space-evenly;
+
+  button {
+    width: 134px;
+    height: 48px;
+  }
 }
