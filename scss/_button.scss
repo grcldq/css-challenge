@@ -10,6 +10,38 @@
   align-items: center;
   justify-content: center;
 
+  &__chevron-icon-container {
+    position: absolute;
+    z-index: 3;
+  }
+
+  &__chevron-icon {
+    width: min-content;
+    position: relative;
+  }
+
+  &__checkout {
+    position: relative;
+  }
+
+  &__resizer {
+    min-width: 21px;
+    width: 21px;
+    height: 46px;
+    overflow: hidden;
+    opacity: 0;
+    resize: horizontal;
+    max-width: calc(100vw - 100px);
+  }
+
+  &__slider-icon {
+    pointer-events: none;
+    position: absolute;
+    bottom: -10px;
+    left: calc(100% - 20px);
+    line-height: 0;
+  }
+
   &--with-arrow {
     position: relative;
   }
@@ -22,7 +54,12 @@
 
   &--pink-purple {
     background: $pink-100;
-    background: linear-gradient(90deg, $pink-100 0%, $purple-300 50%, $purple-500 100%);
+    background: linear-gradient(
+      90deg,
+      $pink-100 0%,
+      $purple-300 50%,
+      $purple-500 100%
+    );
   }
 
   &--inverted {

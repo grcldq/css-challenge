@@ -17,7 +17,7 @@ body {
 .container {
   height: 100vh;
   overflow: scroll;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 .ticket-info {

@@ -3,11 +3,13 @@
 .modal {
   background-color: $navy-200;
   border-radius: 25px 25px 0 0;
+  box-sizing: border-box;
   color: $purple-400;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   margin-top: 24px;
-  min-height: 350px;
+  overflow: hidden;
   padding: 8px 16px;
   scroll-snap-align: start;
 }
@@ -46,6 +48,7 @@
   border: 1px solid $border;
   border-radius: 16px 16px 0 0;
   padding: 16px;
+  overflow: scroll;
 }
 
 .modal__item {
