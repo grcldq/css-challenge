@@ -30,56 +30,36 @@
           <div class="ticket-box__header">
             <img
               class="ticket-box__header-icon"
-              src="./icons/open-door.svg"
+              src="./assets/open-door.svg"
               alt="opened door"
             />
             <h1 class="ticket-box__header-text">Already checked in</h1>
           </div>
-          <div class="ticket-box__details">
-            <div class="ticket-box__ticket">
-              <svg
-                role="none"
-                class="ticket-box__ticket-cutout ticket-box__ticket-cutout--left"
-              >
-                <circle
-                  style="fill: transparent"
-                  cx="20"
-                  cy="20"
-                  r="20"
-                ></circle>
-              </svg>
-              <div class="ticket-box__ticket-text">
-                <p
-                  class="ticket-box__ticket-text--grey ticket-box__ticket-text--uppercase ticket-box__ticket-text--small"
-                >
-                  Check in
-                </p>
-                <p
-                  class="ticket-box__ticket-text ticket-box__ticket-text--bold"
-                >
-                  09:41:08
-                </p>
+          <div class="ticket-box__details-container">
+            <img src="assets/ticket.svg" class="ticket-box__bg" />
+            <div class="ticket-box__details">
+              <div class="ticket-box__ticket">
+                <div class="ticket-box__text">
+                  <p
+                    class="ticket-box__text--grey ticket-box__text--uppercase ticket-box__text--small"
+                  >
+                    Check in
+                  </p>
+                  <p class="ticket-box__text ticket-box__text--bold">
+                    09:41:08
+                  </p>
+                </div>
               </div>
-            </div>
-            <span class="ticket-box__dashed-border"></span>
-            <div class="ticket-box__ticket">
-              <svg
-                role="none"
-                class="ticket-box__ticket-cutout ticket-box__ticket-cutout--right"
-              >
-                <circle fill="transparent" cx="20" cy="20" r="20"></circle>
-              </svg>
-              <div class="ticket-box__ticket-text">
-                <p
-                  class="ticket-box__ticket-text ticket-box__ticket-text--grey ticket-box__ticket-text--uppercase ticket-box__ticket-text--small"
-                >
-                  Entrance
-                </p>
-                <p
-                  class="ticket-box__ticket-text ticket-box__ticket-text--bold"
-                >
-                  Entry B
-                </p>
+              <span class="ticket-box__dashed-border"></span>
+              <div class="ticket-box__ticket">
+                <div class="ticket-box__text">
+                  <p
+                    class="ticket-box__text ticket-box__text--grey ticket-box__text--uppercase ticket-box__text--small"
+                  >
+                    Entrance
+                  </p>
+                  <p class="ticket-box__text ticket-box__text--bold">Entry B</p>
+                </div>
               </div>
             </div>
           </div>
@@ -88,7 +68,7 @@
               <div class="button__chevron-icon">
                 <div class="button__resizer"></div>
                 <div class="button__slider-icon">
-                  <img src="icons/chevron.svg" alt="sliding chevron icon" />
+                  <img src="assets/chevron.svg" alt="sliding chevron icon" />
                 </div>
               </div>
             </div>
@@ -99,7 +79,7 @@
         </div>
         <div class="actions">
           <button class="button button--pink-purple button__text--regular">
-            <img src="icons/camera.svg" alt="camera" class="button__icon" />
+            <img src="assets/camera.svg" alt="camera" class="button__icon" />
             Scan
           </button>
           <button class="button button--inverted button__text--regular">
@@ -109,7 +89,7 @@
       </section>
       <section class="modal">
         <img
-          src="icons/toggle.svg"
+          src="assets/toggle.svg"
           alt="swipe up toggle"
           class="modal__toggle"
         />
@@ -117,12 +97,12 @@
           <h1 class="modal__header-text">Activity Log - Scanner B</h1>
           <div class="modal__header-notification">
             <span class="modal__header-notification-number">9</span>
-            <img src="icons/red-dot.svg" alt="red ellipsis" />
+            <img src="assets/red-dot.svg" alt="red ellipsis" />
           </div>
         </div>
         <div class="modal__contained-box">
           <div class="modal__item">
-            <img src="icons/check.svg" class="modal__item-icon" alt="success" />
+            <img src="assets/check.svg" class="modal__item-icon" alt="success" />
             <div class="modal__item-details">
               <div
                 class="modal__item-details-status modal__item-details-status--success"
@@ -142,7 +122,7 @@
             </div>
           </div>
           <div class="modal__item">
-            <img src="icons/error.svg" class="modal__item-icon" alt="error" />
+            <img src="assets/error.svg" class="modal__item-icon" alt="error" />
             <div class="modal__item-details">
               <div
                 class="modal__item-details-status modal__item-details-status--error"
@@ -154,7 +134,7 @@
             </div>
           </div>
           <div class="modal__item">
-            <img src="icons/door.svg" class="modal__item-icon" alt="entered" />
+            <img src="assets/door.svg" class="modal__item-icon" alt="entered" />
             <div class="modal__item-details">
               <div
                 class="modal__item-details-status modal__item-details-status--warning"
@@ -174,7 +154,7 @@
             </div>
           </div>
           <div class="modal__item">
-            <img src="icons/check.svg" class="modal__item-icon" alt="success" />
+            <img src="assets/check.svg" class="modal__item-icon" alt="success" />
             <div class="modal__item-details">
               <div
                 class="modal__item-details-status modal__item-details-status--success"
@@ -194,7 +174,7 @@
             </div>
           </div>
           <div class="modal__item">
-            <img src="icons/door.svg" class="modal__item-icon" alt="entered" />
+            <img src="assets/door.svg" class="modal__item-icon" alt="entered" />
             <div class="modal__item-details">
               <div
                 class="modal__item-details-status modal__item-details-status--warning"
@@ -214,7 +194,7 @@
             </div>
           </div>
           <div class="modal__item">
-            <img src="icons/check.svg" class="modal__item-icon" alt="success" />
+            <img src="assets/check.svg" class="modal__item-icon" alt="success" />
             <div class="modal__item-details">
               <div
                 class="modal__item-details-status modal__item-details-status--success"
@@ -234,7 +214,7 @@
             </div>
           </div>
           <div class="modal__item">
-            <img src="icons/error.svg" class="modal__item-icon" alt="error" />
+            <img src="assets/error.svg" class="modal__item-icon" alt="error" />
             <div class="modal__item-details">
               <div
                 class="modal__item-details-status modal__item-details-status--error"
