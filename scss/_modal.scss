@@ -83,7 +83,11 @@
   &-details-status {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
+    &:first-child {
+      margin-right: 8px;
+    }
 
     &--success {
       color: $green-100;
