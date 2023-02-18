@@ -9,14 +9,12 @@ body {
   color: $primary-text;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
-  height: 100dvh;
-  max-height: 100dvh;
   margin: 0;
   overflow: hidden;
 }
 
 .container {
-  height: 100vh;
+  height: 100dvh;
   overflow: scroll;
   scroll-snap-type: y mandatory;
 }
