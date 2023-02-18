@@ -22,6 +22,7 @@
 
   &__checkout {
     position: relative;
+    touch-action: none;
   }
 
   &__resizer {
