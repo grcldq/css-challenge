@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/index.html",
   "scripts": {
-    "build": "node-sass --output-style compressed -o dist scss",
+    "build": "node-sass --output-style compressed -o ./ scss",
     "watch:css": "onchange \"scss\" -- npm run build",
-    "start": "browser-sync start --server \"dist\" --files \"dist\"",
+    "start": "http-server -p 3000 --proxy http://localhost:3000?",
     "develop": "run-p start watch:css"
   },
   "author": "Geraldine Atayan",

@@ -7,6 +7,7 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0 6px 10px 4px;
   margin: 16px 0;
   padding: 24px 16px;
+  touch-action: pan-y pinch-zoom;
 
   &__header {
     color: $white;
