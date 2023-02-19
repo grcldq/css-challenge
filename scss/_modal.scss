@@ -74,10 +74,6 @@
   &-details-text {
     color: $secondary-text;
     font-size: 16px;
-
-    &--bold {
-      font-weight: bold;
-    }
   }
 
   &-details-status {
@@ -87,18 +83,6 @@
 
     &:first-child {
       margin-right: 8px;
-    }
-
-    &--success {
-      color: $green-100;
-    }
-
-    &--error {
-      color: $red-100;
-    }
-
-    &--warning {
-      color: $orange-300;
     }
   }
 }

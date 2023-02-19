@@ -1,5 +1,28 @@
 @import '_theme.scss';
 
+input[type='range'].button__checkout-slider {
+  -webkit-appearance: none;
+  background: transparent;
+  padding: 6px;
+  width: calc(100vw - 64px);
+  position: absolute;
+  box-sizing: border-box;
+  height: 54px;
+  top: -2.5px;
+  left: -2.5px;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 44px;
+    height: 44px;
+    background: $navy-100;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 4;
+  }
+}
+
 .button {
   border-radius: 30px;
   color: $white;
@@ -10,47 +33,16 @@
   align-items: center;
   justify-content: center;
 
-  &__chevron-icon-container {
-    position: absolute;
-    z-index: 3;
-  }
-
-  &__chevron-icon {
-    width: min-content;
-    position: relative;
-  }
-
   &__checkout {
-    position: relative;
-    touch-action: none;
-  }
-
-  &__resizer {
-    min-width: 21px;
-    width: 21px;
-    height: 46px;
-    overflow: hidden;
-    opacity: 0;
-    resize: horizontal;
-    max-width: calc(100vw - 100px);
-  }
-
-  &__slider-icon {
-    pointer-events: none;
-    position: absolute;
-    bottom: -10px;
-    left: calc(100% - 20px);
-    line-height: 0;
-  }
-
-  &--with-arrow {
     position: relative;
   }
 
   &--orange-purple {
-    background: $orange-300;
+    border-radius: 30px;
     background: linear-gradient(90deg, $orange-100 0%, $purple-200 100%);
     box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px;
+    height: 100%;
+    max-height: 54px;
   }
 
   &--pink-purple {
@@ -67,16 +59,6 @@
     background: transparent;
     border: 1px solid $purple-400;
     color: $purple-400;
-  }
-
-  &__text--large {
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-
-  &__text--regular {
-    font-weight: bold;
-    padding: 16px;
   }
 
   &__icon {

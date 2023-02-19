@@ -1,0 +1,48 @@
+@import '_theme.scss';
+
+.text {
+  &--large {
+    font-size: 1.3em;
+  }
+
+  &--normal {
+    font-weight: bold;
+    padding: 16px;
+  }
+
+  &--small {
+    font-size: 16px;
+  }
+
+  &--xs {
+    font-size: 12px;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--grey {
+    color: $grey-100;
+  }
+
+  &--success {
+    color: $green-100;
+  }
+
+  &--error {
+    color: $red-100;
+  }
+
+  &--warning {
+    color: $orange-300;
+  }
+
+  &--navy {
+    color: $navy-100;
+  }
+}

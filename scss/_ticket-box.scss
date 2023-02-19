@@ -63,31 +63,10 @@
     margin: 10px 0;
     padding: 10px 6px;
     position: relative;
-  }
-
-  &__text {
-    color: $navy-100;
-    font-size: 16px;
 
     p {
       line-height: 1.5;
       margin: 3px 0;
-    }
-
-    &--grey {
-      color: $grey-100;
-    }
-
-    &--small {
-      font-size: 12px;
-    }
-
-    &--uppercase {
-      text-transform: uppercase;
-    }
-
-    &--bold {
-      font-weight: bold;
     }
   }
 }
